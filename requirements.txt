@@ -2,3 +2,4 @@ fastapi
 google-generativeai
 python-dotenv
 uvicorn
+pydantic
