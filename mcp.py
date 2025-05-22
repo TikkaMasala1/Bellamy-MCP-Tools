@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 import google.generativeai as genai
 from PyPDF2 import PdfReader
 import os
@@ -31,6 +32,7 @@ class QuestionRequest(BaseModel):
     topic: str
     type: str  # "multiple_choice" or "scenario"
     level: str  # "beginner", "intermediate", "advanced"
+    amount: int
 
 
 
@@ -41,7 +43,7 @@ async def generate_question(request: QuestionRequest):
         Based on this cybersecurity knowledge:
         {knowledge_base[:300000]}...
 
-        Generate a {request.level} level {request.type} question about {request.topic}.
+        Generate {request.amount} {request.level} level {request.type} question(s) about {request.topic}.
         Format: 
         - Question: [question text]
         - Options: [if multiple choice]
