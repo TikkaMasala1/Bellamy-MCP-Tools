@@ -8,8 +8,8 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <your-repository-name>
+    git clone https://github.com/TikkaMasala1/Bellamy-MCP-Tools
+    cd Bellamy-MCP-Tools
     ```
 
 2.  **Create and Activate a Conda Environment (Recommended)**
