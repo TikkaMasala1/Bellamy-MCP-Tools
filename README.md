@@ -17,7 +17,7 @@
     If you prefer using Conda for environment management:
 
     1.  **Create a new Conda environment:**
-        Replace `myenv` with your preferred environment name and specify your desired Python version (e.g., ```python=3.9```), leaving it```python``` will download the latest verision
+        Replace `myenv` with your preferred environment name and specify your desired Python version (e.g., ```python=3.9```), leaving it ```python``` will download the latest verision
         ```bash
         conda create --name myenv python
         ```
